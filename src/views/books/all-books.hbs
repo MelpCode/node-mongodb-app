@@ -1,0 +1,19 @@
+
+<h2 class="display-4">Books</h2>
+<hr class="my-2">
+<div class="row">
+    {{#each books}}
+        <div class="col-md-3">
+            <div class="card shadow rounded">
+                <img src="{{imagebook}}" alt="" class="mx-auto my-2" style="max-width: 60%;">
+                <hr class="my-2">
+                <div class="card-body">
+                    <p class="text-center font-weight-bold">{{genre}}</p>
+                    <h3 class="text-center">{{title}}</h3>
+                    <p class="text-center" >{{author}}</p>
+                    <p>Uploaded by: {{registeredBy}}</p>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>

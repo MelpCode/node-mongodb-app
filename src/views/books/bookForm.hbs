@@ -1,0 +1,44 @@
+<h2 class="display-4">Register a new Book</h2>
+<div class="row my-4">
+    <div class="col-md-4 offset-md-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <form action="/books" method="POST">
+                    <div class="form-group">
+                    <input 
+                        type="text"
+                        name="title"
+                        placeholder="Enter title"
+                        class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="text"
+                            name="author"
+                            placeholder="Enter author"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="text"
+                            name="genre"
+                            placeholder="Enter genre"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="text"
+                            name="imagebook"
+                            placeholder="Enter image"
+                            class="form-control">
+                    </div>
+                    <button 
+                        type="submit"
+                        class="btn btn-primary btn-block">
+                        Save Book
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

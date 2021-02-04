@@ -1,0 +1,28 @@
+
+<h2 class="display-4">Books</h2>
+<hr class="my-2">
+<div class="row">
+    {{#each books}}
+        <div class="col-md-3">
+            <div class="card shadow rounded">
+                <img src="{{imagebook}}" alt="" class="mx-auto my-4" style="max-width: 60%;">
+                <hr class="my-2">
+                <a href="/books/edit/{{_id}}" class="text-center text-info">Edit</a>
+                <div class="card-body">
+                    <p class="text-center font-weight-bold">{{genre}}</p>
+                    <h3 class="text-center">{{title}}</h3>
+                    <p class="text-center" >{{author}}</p>
+                </div>
+                
+            </div>
+            <form action="/books/delete/{{_id}}?_method=DELETE" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <button 
+                    type="submit" 
+                    class="btn btn-danger btn-block">
+                    DELETE
+                </button>
+            </form>
+        </div>
+    {{/each}}
+</div>

@@ -1,0 +1,34 @@
+
+<h1 class="display-4">Login Account</h1>
+<div class="row my-4">
+    <div class="col-md-4 offset-md-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <form action='/login' method="POST">
+                    <div class="form-group">
+                        <input 
+                            type="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="password"
+                            name="password"
+                            placeholder="Enter password"
+                            class="form-control">
+                    </div>
+                    <button 
+                        type="submit"
+                        class="btn btn-primary btn-block">
+                        LogIn
+                    </button>
+                    <div class="text-center my-4">
+                        <a href="/register" class="text-info text-center">Not have a account yet?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
